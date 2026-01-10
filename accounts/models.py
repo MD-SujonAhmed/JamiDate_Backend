@@ -8,7 +8,7 @@ def validate_image(file):
     # size max 
     if file.size > max_size_mb * 1024 * 1024:
         raise ValidationError(f"Image size should not exceed {max_size_mb}MB.")
-    validate_extensions=['.jbp','.png','gif']
+    validate_extensions=['.jbp','.png','.gif']
     import os
     ext=os.path.splitext(file.name)[1].lower()
     if ext not in validate_extensions:
@@ -42,10 +42,11 @@ class Account(AbstractBaseUser,PermissionsMixin):
     Business_Name=models.CharField(max_length=50,blank=True)
     website_Url=models.URLField(max_length=200,blank=True)
     Email=models.EmailField(unique=True)
-    USERNAME_FILED='Email'
-    REQUIRED_FIELDS=['FirstName','LastName','Email']
+    USERNAME_FIELD='Email'
+    REQUIRED_FIELDS=['FirstName','LastName']
     is_active=models.BooleanField(default=True)
     is_staff=models.BooleanField(default=False)
+    objects=AccountManager()
     def __str__(self):
         return self.Email
     

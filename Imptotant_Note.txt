@@ -1,0 +1,83 @@
+🏠 Home PC থেকে connect করার Complete Steps
+✅ Step 1: Home PC-তে Git ইনস্টল আছে কিনা চেক করো
+git --version
+
+না থাকলে → git-scm.com থেকে install করো।
+
+✅ Step 2: Repo clone করো (একবারই)
+Home PC-তে যেই folder এ কাজ করতে চাও, সেখানে গিয়ে:
+git clone https://github.com/MD-SujonAhmed/Test.git
+
+তারপর:
+cd Test
+
+👉 এখন Home PC-তে repo ready ✅
+
+✅ Step 3: কাজ শুরু করার আগে (IMPORTANT)
+প্রতিবার কাজ শুরু করার আগে এইটা করবা 👇
+git pull origin main
+
+
+যদি branch master হয়:
+
+git pull origin master
+
+📌 এতে অফিসে করা সব latest code নামবে।
+
+✅ Step 4: Home PC-তে কাজ করো → commit → push
+git status
+git add .
+git commit -m "work from home update"
+git push origin main
+
+🔁 এখন GitHub-এ কোড চলে গেছে।
+
+✅ Step 5: আবার অফিস PC-তে গেলে
+অফিস PC-তে শুধু এইটা করলেই হবে:
+git pull origin main
+
+🎯 Home + Office = same codebase
+
+🧠 মনে রাখার ছোট সূত্র
+Work start  → git pull
+Work end    → git commit + git push
+
+
+⚠️ খুব জরুরি সতর্কতা
+❌ দুই PC-তে একসাথে একই file edit করো না
+❌ pull না করে কাজ শুরু কোরো না
+❌ commit ছাড়া PC বন্ধ কোরো না
+
+⭐ Extra (Professional Tip)
+Commit message এ জায়গা লিখে দাও:
+
+
+"office: api fix"
+
+
+"home: ui update"
+
+
+এতে পরে বুঝতে সুবিধা হয়।
+
+ভাই, এখন তুমি একদম company-level Git workflow ব্যবহার করছো 💪
+চাও তো পরের ধাপে আমি:
+
+
+❗ merge conflict fix
+
+
+🌿 branch workflow (feature branch)
+
+
+🔐 SSH key setup
+
+
+যেটা দরকার বললেই হবে।
+
+# Professional
+Email: user@gmial.com
+FirstName: sujon
+LastName: ahmed
+Password: 12345
+Password (again):12345
