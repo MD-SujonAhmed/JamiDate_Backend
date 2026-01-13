@@ -13,7 +13,12 @@ SECRET_KEY = "django-insecure-t8cy1a6bwg#ihy%8&-0=hgtc^potn!s0&*@zl-pe1r!r9_qox=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["172.252.13.97", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "test10.fireai.agency",
+    "www.test10.fireai.agency",
+]
+
+# ALLOWED_HOSTS = ["172.252.13.97", "127.0.0.1"]
 
 AUTH_USER_MODEL = "accounts.Account"
 
