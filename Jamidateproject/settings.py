@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "accounts",
-    "rest_framework",
+    "rest_framework", 
     "socail",
 ]
 
@@ -126,3 +126,5 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 
 # python manage.py collectstatic
+# App ID : 1850517875582075
+# App secret: b9c6c119eddf42b325c01e07a2001326
